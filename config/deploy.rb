@@ -1,12 +1,12 @@
 require "bundler/capistrano"
 
 set :application, "bigtuna"
-set :domain, "bigtuna.hsihealth.com"
+set :domain, "184.106.193.74"
 set :repository, "git://github.com/alexw668/bigtuna.git"
 set :use_sudo, false
 set :deploy_to, "/var/www/#{application}"
 set :scm, :git
-set :user, "user_running_apps"
+#set :user, "user_running_apps"
 
 role :app, domain
 role :web, domain
